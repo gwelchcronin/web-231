@@ -12,7 +12,7 @@ run them through the output of console.log as well as testing by debugging.
 
 var firstName = 'Georgia'
 var lastName = 'Welch Cronin'
-var age = 152
+var age = 52
 var street = '1210 North Cedar Boulevard'
 var city = 'Oxford'
 var state = 'Mississippi'
