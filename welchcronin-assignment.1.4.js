@@ -16,7 +16,7 @@ var age = 52
 var street = '1210 North Cedar Boulevard'
 var city = 'Oxford'
 var state = 'Mississippi'
-var zipCode = 80633
+var zipCode = 80635
 
 console.log(firstName)
 console.log(lastName)

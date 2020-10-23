@@ -12,28 +12,28 @@
 var firstName = 'Kathy'
 var lastName = 'Chvatal'
 var address = '304 South Purdue'
-var payRate = '14.98'
-payRate = tofixed(1); //number goes to 1 decimal point
-var now = newDate();
+var payRate = 14.98;
+var hireDate = new Date().toLocalDateString('en-US');
 
 //employee 2
 var firstName = 'Melanie'
 var lastName = 'Bristol'
 var address = '8824 Shasta Lane'
-var payRate = '16.98'
-payRate = tofixed(1);
-var now = newDate();
+var payRate = 12.77;
+var hireDate = new Date().toLocalDateString('en-US');
 
 //employee 3
 var firstName = 'Amber'
 var lastName = 'Waverly'
 var address = '5031 Underwood Apt.4B'
-var payRate = '10.98'
-payRate = tofixed(1);
-var now = newDate();
+var payRate = 10.08;
+var hireDate = new Date().toLocalDateString('en-US');
 
 console.log('First Name: ' + firstName)
 console.log('Last Name:' + lastName)
 console.log('Address: ' + address)
+ //hire date reads as todays date
 console.log('Pay Rate: ' + payRate) 
 console.log('Hire Date: ' + newDate)
+ //number goes to 1 decimal point
+console.log('Pay rate: ' + payRate.toFixed(1));
