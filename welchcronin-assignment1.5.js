@@ -4,36 +4,67 @@
 ; Author: Professor Krasso
 ; Date: 21 October 2020
 ; Modified By: Georgia Welch Cronin
+; Additional Code on Dates from : 
+; https://github.com/buwebdev/web-231/blob/master/week-1/dates.js
 ; Description: This program shows how to assign values to variables, focusing on primitive data types. 
 ;===========================================
 */ 
 
 //emloyee 1
-var firstName = 'Kathy'
-var lastName = 'Chvatal'
-var address = '304 South Purdue'
-var payRate = 14.98;
-var hireDate = new Date().toLocalDateString('en-US');
+var firstName1 = 'Kathy'
+var lastName1 = 'Chvatal'
+var address1 = '304 South Purdue'
+var payRate1 = 14.98;
+var hireDate = new Date();
+let now = hireDate.toLocaleDateString()
+let nowV2 = hireDate.toLocaleDateString('en-US')
 
 //employee 2
-var firstName = 'Melanie'
-var lastName = 'Bristol'
-var address = '8824 Shasta Lane'
-var payRate = 12.77;
-var hireDate = new Date().toLocalDateString('en-US');
+var firstName2 = 'Melanie'
+var lastName2 = 'Bristol'
+var address2 = '8824 Shasta Lane'
+var payRate2 = 12.77;
+var hireDate = new Date();
 
 //employee 3
-var firstName = 'Amber'
-var lastName = 'Waverly'
-var address = '5031 Underwood Apt.4B'
-var payRate = 10.08;
-var hireDate = new Date().toLocalDateString('en-US');
+var firstName3 = 'Amber'
+var lastName3 = 'Waverly'
+var address3 = '5031 Underwood Apt. 4B'
+var payRate3 = 10.08;
+var hireDate = new Date();
 
-console.log('First Name: ' + firstName)
-console.log('Last Name:' + lastName)
-console.log('Address: ' + address)
- //hire date reads as todays date
-console.log('Pay Rate: ' + payRate) 
-console.log('Hire Date: ' + newDate)
+
+console.log('--Displaying Employee Records--')
+//adding a line break
+console.log(' ')
+
+console.log('First Name: ' + firstName1)
+console.log('Last Name: ' + lastName1)
+console.log('Address: ' + address1)
+//number goes to 1 decimal point
+console.log('Pay rate: ' + payRate1.toFixed(1));
+//hire date reads as todays date
+console.log('Hire Date: ' + now)
+
+//adding a line break
+console.log(' ')
+
+console.log('First Name: ' + firstName2)
+console.log('Last Name: ' + lastName2)
+console.log('Address: ' + address2)
+//number goes to 1 decimal point
+console.log('Pay rate: ' + payRate2.toFixed(1));
+//hire date reads as todays date
+console.log('Hire Date: ' + now)
+
+//adding a line break
+console.log(' ')
+
+console.log('First Name: ' + firstName3)
+console.log('Last Name: ' + lastName3)
+console.log('Address: ' + address3)
  //number goes to 1 decimal point
-console.log('Pay rate: ' + payRate.toFixed(1));
+console.log('Pay rate: ' + payRate3.toFixed(1));
+ //hire date reads as todays date
+console.log('Hire Date: ' + now)
+
