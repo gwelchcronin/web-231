@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  header.js
+; Title:  welchcronin-header.js
 ; Author: Professor Krasso 
 ; Date:   27 June 2020
 ; Modified By: Georgia Welch Cronin
