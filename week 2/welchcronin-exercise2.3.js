@@ -24,15 +24,15 @@ Hello FirstName LastName!
 */
 
 
-// function property is defined here
+// The function property is defined here.
 myName.georgia = "Georgia WelchCronin";
 
-// here is the actual function and what I want it to do
+// Here is the actual function and what I want it to do.
 function myName(){
     return myName.georgia;
 }
 
-//output from the function
+//This is the output from the function.
 console.log('\n');
 console.log("Hello " + myName() +"!");
 

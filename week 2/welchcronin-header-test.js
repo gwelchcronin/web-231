@@ -8,7 +8,10 @@
 ;===========================================
 */
 
+
+//This is the variable for the header. 
 const header = require('./welchcronin-header.js');
 
+//This is the output for the header variable.
 console.log(header.display("Georgia", "WelchCronin", "Exercise2.2"));
 

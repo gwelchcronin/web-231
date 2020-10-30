@@ -16,7 +16,7 @@ console.log(header.display("Georgia", "WelchCronin", "Assignment 2.4"));
 //start program
 
 
-//functions
+//These are the different needed functions.
 function fullName(firstName,lastName){
     return firstName + ' ' + lastName;
 }
@@ -33,7 +33,7 @@ function convertToFloat(str){
     return parseFloat(str);
 }
 
-//assigning results of the function to variables in the output
+//In the output the function is called and I've assigned results of the function to variables.
 console.log('\n');
 console.log("Hello my name is " + fullName('Georgia', 'WelchCronin') +"!");
 console.log("Today's date is " + dateWriter(2020, 10, 30) + " and the current temperature is " + formatNumber('32.0') + " degrees.");
