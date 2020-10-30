@@ -1,49 +1,40 @@
 /*
 ============================================
-; Title:  header.js
+; Title:  welchcronin-header-test.js
 ; Author: Professor Krasso 
-; Date:   27 June 2020
+; Date:   30 October 2020
 ; Modified By: Georgia Welch Cronin
-; Description: Displays a formatted header
+; Additional dateWriter code ideas from https://stackoverflow.com/questions/60408068/date-and-time-function-formatting
+; Description: Defining and calling functions practice
 ;===========================================
 */
+
+const header = require('./welchcronin-header.js');
+
+console.log(header.display("Georgia", "WelchCronin", "Assignment 2.4"));
+
 //start program
 
-/*
-  // Below is what I am expecting to see when I run your program - remove this before submitting your work
-  // 50% of you will not read this and lose 25% of the awardable points.
-  FirstName LastName
-  Assignment 2.4
-  Today's Date
-  Hello my name is <your actual name goes here>!
-  Today's date is <today's date> and the current temperature is <33.6 - use the formatNumber function> degrees.
-  I am <your actual age - parsed int value> years old and my savings account goal is <your actual goal - parsed float value> dollars.
-*/
 
-fullName = "Georgia Welch Cronin!"
-dateWriter = "2020, October, 29, "
-formatNumber = "45.48"
-convertToInt = "52"
-convertToFloat = "500"
-
+//functions
 function fullName(firstName,lastName){
-    return fullName;
+    return firstName + ' ' + lastName;
 }
-function dateWriter(year, month, day) {
-    return dateWriter;
+function dateWriter(year,month,day){
+    return month+"/"+day+"/"+year;
 }
-function formatNumber(number, numOfFixedPositions) {
-    return formatNumber;
+function formatNumber(number, toNumOfFixedpositions){
+    return number;
 }
-function convertToInt(myage) {
-    return convertToInt;
+function convertToInt(str){
+    return parseInt(str, 10);
 }
-function convertToFloat(money) {
-    return convertToFloat;
+function convertToFloat(str){
+    return parseFloat(str);
 }
 
-
-
-console.log("Hello my name is " + fullName) 
-console.log("Today's date is " + dateWriter + "and the current temperature is " + formatNumber + " degrees.")
-console.log("My age is " + convertToInt + " years old " + "and my savings account goal is " + convertToFloat + " dollars." )
+//assigning results of the function to variables in the output
+console.log('\n');
+console.log("Hello my name is " + fullName('Georgia', 'WelchCronin') +"!");
+console.log("Today's date is " + dateWriter(2020, 10, 30) + " and the current temperature is " + formatNumber('32.0') + " degrees.");
+console.log("I am " + convertToInt('52') + " years old and my savings account goal is " + convertToFloat('5000.00') + " dollars.");
