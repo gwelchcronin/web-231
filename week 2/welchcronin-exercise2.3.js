@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  welchcronin-header-test.js
+; Title:  welchcronin-exercise2.3.js
 ; Author: Professor Krasso 
 ; Date:   30 October 2020
 ; Modified By: Georgia Welch Cronin
