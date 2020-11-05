@@ -10,7 +10,7 @@
 
 const header = require('./welchcronin-header.js');
 
-console.log(header.display("Georgia", "WelchCronin", "Assignment 3.1"));
+console.log(header.display("Georgia", "WelchCronin", "Assignment 3.2"));
 
 //start program
 
