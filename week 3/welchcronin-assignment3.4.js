@@ -22,10 +22,11 @@ function randomNumber() {
     return Math.floor((Math.random() * 10) + 1)
   }
 
-  //This is creating a variable (testNumber) with a value between 1 and 10 (8), and creating a For loop with 10 iterations (<10) of a local variable (x) that is assigned the random number,
+//This is creating a variable (testNumber) with a value between 1 and 10 (8), and creating a For loop with 10 iterations (<10) of a local variable (x) that is assigned the random number,
 //Here I am creating an if else statement to test if the variable (testNumber) is equal to the randomNumber (x).
-
+//the randomNumber function is within the body so that it will be called and a random number generated. Once moved here it no longer recognizes my 10 iterations, I'm not sure why.
 let testNumber = 3;
+
 for (var x = 0; x < 10; x++) {
     x = randomNumber()
     if (match(testNumber, x)) {
@@ -37,8 +38,8 @@ for (var x = 0; x < 10; x++) {
 }
 //Here I am copying functions from 3.2 for match, logMismatch and logMatch.
 //The first function is defined and shows if arg1 and arg2 are absolutely equal or if they are not.
-function match(testNumber, randomNumber){   
-    if (testNumber === randomNumber)
+function match(arg1, arg2){   
+    if (arg1 === arg2)
         return true
     else
         return false
