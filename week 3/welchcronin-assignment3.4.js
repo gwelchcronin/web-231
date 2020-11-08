@@ -36,6 +36,13 @@ for (var x = 0; x < 10; x++) {
     }    
 
 }
+
+// //Adding in a while loop to try to control the number of iterations returned. I tried this but it does not affect the random number of returns.
+// var x = 0
+// while(x<10){
+//     return match
+// }
+
 //Here I am copying functions from 3.2 for match, logMismatch and logMatch.
 //The first function is defined and shows if arg1 and arg2 are absolutely equal or if they are not.
 function match(arg1, arg2){   
