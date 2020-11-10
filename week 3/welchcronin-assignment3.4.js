@@ -27,8 +27,8 @@ function randomNumber() {
 //the randomNumber function is within the body so that it will be called and a random number generated. Once moved here it no longer recognizes my 10 iterations, I'm not sure why.
 let testNumber = 3;
 
-for (var x = 0; x < 10; x++) {
-    x = randomNumber()
+for (let index = 0; index < 10; index++) {
+    let x = randomNumber()
     if (match(testNumber, x)) {
         logMatch(testNumber, x);
     } else {
@@ -37,11 +37,7 @@ for (var x = 0; x < 10; x++) {
 
 }
 
-// //Adding in a while loop to try to control the number of iterations returned. I tried this but it does not affect the random number of returns.
-// var x = 0
-// while(x<10){
-//     return match
-// }
+//
 
 //Here I am copying functions from 3.2 for match, logMismatch and logMatch.
 //The first function is defined and shows if arg1 and arg2 are absolutely equal or if they are not.
