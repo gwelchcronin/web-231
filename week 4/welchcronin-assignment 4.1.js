@@ -19,12 +19,16 @@ console.log('\n'); //Here I am adding a line break between header and exercise o
 
 //Creating an array with 4 items.
 let inks = ['cyan', 'magenta', 'yellow', 'black']
+
 //Using the sort method to alphabetize the ink names.
 inks.sort(a,b);
+
 //Adding a title line to explain the output.
 console.log("Printer Inks in Alphabetical Order");
+
 //Adding a space between the title and the output.
 console.log('\n');
+
 //Calling the array to be sorted. 
 console.log(inks);
 
