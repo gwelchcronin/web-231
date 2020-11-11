@@ -56,7 +56,7 @@ function getState (statesIndex, stateToCompare)
 }
 
 
-//Output to show the selected value, using the get state function asn seeking the Iowa item. 
+//Output to show the selected value, using the get state function and seeking the Iowa item. 
 console.log("--SELECTED VALUE--") //Header for the output of this section.
 //Using JavaScript's built-in filter() function, 
 //Call the getState function and pass-in the current element (statesIndex)

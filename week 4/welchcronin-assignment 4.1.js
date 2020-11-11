@@ -21,7 +21,7 @@ console.log('\n'); //Here I am adding a line break between header and exercise o
 let inks = ['cyan', 'magenta', 'yellow', 'black']
 
 //Using the sort method to alphabetize the ink names.
-inks.sort(a,b);
+inks.sort();
 
 //Adding a title line to explain the output.
 console.log("Printer Inks in Alphabetical Order");
