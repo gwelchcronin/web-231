@@ -4,7 +4,7 @@
 ; Author: Professor Krasso 
 ; Date:   18 November 2020
 ; Modified By: Georgia Welch Cronin
-; Description: Creating an array-like object collection and filtering the output using the forEach() function.
+; Description: Creating an array-like object collection and filtering the content using the map() function, then creating output using the forEach() function.
 ;===========================================
 */
 
