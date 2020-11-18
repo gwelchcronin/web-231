@@ -2,7 +2,7 @@
 ============================================
 ; Title:  welchcronin-exercise 5.3.js
 ; Author: Professor Krasso 
-; Date:   16 November 2020
+; Date:   18 November 2020
 ; Modified By: Georgia Welch Cronin
 ; Description: Creating an array-like object collection and filtering the output using the forEach() function.
 ;===========================================
@@ -50,58 +50,33 @@ const famousComposers = [
 ];
 
 //Using JavaScripts built-in forEach() function, iterate over the composer objects.
-//Output the results for last name, genre and ratings only. 
-console.log('-- COMPOSER BY RATING --')
-let index = 1
-famousComposers.forEach((composer) => {
-    console.log('Last Name: ' + composer.lastName + ', Genre: ' + composer.genre + ', Rating: ' + composer.rating)
-    index++
+
+//Using JavaScripts built-in map() function, create a filtered array of composers by rating and last name.
+const ratedComposers = famousComposers.map(function(composers) {
+    return {
+        rating: composers.rating,
+        lastName: composers.lastName
+    }
+})
+//Output the results for ratings and last name only. 
+console.log('-- COMPOSER BY RATING --' + '\n')
+ratedComposers.forEach(function(composers){
+    console.log('Rating: ' + composers.rating +'\n' + 'Composer: ' + composers.lastName +'\n');
 })
 
-console.log('-- COMPOSER BY GENRE --')
-let index = 1
-famousComposers.forEach((composer) => {
-    console.log('Last Name: ' + composer.lastName + ', Genre: ' + composer.genre + ', Rating: ' + composer.rating)
-    index++
+//Add a bit of space.
+console.log('\n');
+
+// Using JavaScripts built-in map() function, create a filtered array of composers by genre and last name.
+const genredComposers = famousComposers.map(function(composers) {
+    return {
+        genre: composers.genre,
+        lastName: composers.lastName
+    }
 })
 
-console.log('-- COMPOSER BY RATING --')
-let index = 1
-famousComposers.forEach((composer) => {
-    console.log('Last Name: ' + composer.lastName + ', Genre: ' + composer.genre + ', Rating: ' + composer.rating)
-    index++
+//Output the results for genre and last name only. 
+console.log('-- COMPOSER BY GENRE --' + '\n')
+genredComposers.forEach(function(composers){
+    console.log('Genre: ' + composers.genre +'\n' + 'Composer: ' + composers.lastName +'\n');
 })
-//Using JavaScripts built-in map() function, create a filtered array of composers by rating (review the starter code for output expectations).
-// Using JavaScripts built-in map() function, create a filtered array of composers by genre (review the starter code for output expectations).
-// Using JavaScripts built-in forEach() function, iterate over each array and output the results.
-
-  
-/*
-  // Below is what I am expecting to see when I run your program - remove this before submitting your work
-  // 50% of you will not read this and lose 25% of the awardable points.
-  FirstName LastName
-  Assignment 5.4
-  Today's Date
-  -- COMPOSER BY RATING --
-  Rating: 8
-  Composer: Beethoven
-  Rating: 10
-  Composer: Mozart
-  Rating: 9
-  Composer: Bach
-  Rating: 6
-  Composer: Haydn
-  Rating: 5
-  Composer: Schubert
-  -- COMPOSER BY GENRE --
-  Genre: Classical
-  Composer: Beethoven
-  Genre: Classical
-  Composer: Mozart
-  Genre: Classical
-  Composer: Bach
-  Genre: Classical
-  Composer: Haydn
-  Genre: Classical
-  Composer: Schubert
-*/
