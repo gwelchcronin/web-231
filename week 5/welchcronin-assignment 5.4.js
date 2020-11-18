@@ -49,7 +49,6 @@ const famousComposers = [
     },
 ];
 
-//Using JavaScripts built-in forEach() function, iterate over the composer objects.
 
 //Using JavaScripts built-in map() function, create a filtered array of composers by rating and last name.
 const ratedComposers = famousComposers.map(function(composers) {
@@ -67,7 +66,7 @@ ratedComposers.forEach(function(composers){
 //Add a bit of space.
 console.log('\n');
 
-// Using JavaScripts built-in map() function, create a filtered array of composers by genre and last name.
+// Using JavaScripts built-in map() function, create a filtered array of composers by genre and last name. (Yes, I coined that new term genredComposers:)
 const genredComposers = famousComposers.map(function(composers) {
     return {
         genre: composers.genre,
