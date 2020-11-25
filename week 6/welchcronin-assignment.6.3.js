@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  welchcronin-exercise 6.3.js
+; Title:  welchcronin-assignment 6.3.js
 ; Author: Professor Krasso 
 ; Date:   25 November 2020
 ; Modified By: Georgia Welch Cronin
@@ -10,7 +10,7 @@
 
 const header = require('../welchcronin-header.js');
 
-console.log(header.display("Georgia", "WelchCronin", "Exercise 6.3"));
+console.log(header.display("Georgia", "WelchCronin", "Assignment 6.3"));
 console.log('\n'); //Here I am adding a line break between header and exercise output.
 
 //start program
