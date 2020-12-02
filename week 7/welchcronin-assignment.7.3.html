@@ -1,16 +1,70 @@
-<div> id="todo"</div>
+<!-- /*
+============================================
+; Title:  WelchCronin-assignment 7.3.html
+; Author: Professor Krasso
+; Date:   02 December 2020
+; Modified By: Georgia Welch Cronin
+; Description: Creating an HTML page that uses inline javascript functions.
+;===========================================
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client-Side JavaScript</title>
+
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
 <script>
-    document.getElementsById('todo').innerHTML = "<h1>TODO LIST </h1>" +
+  document.write("<h1>SHOPPING LIST v.1</h1>");
+  document.write(
+    "<ol>" +
+    "<li>Oranges</li>"+
+    "<li>Apples</li>"+
+    "<li>Pears</li>"+
+    "<li>Limes</li>"+
+    "<li>Lemons</li>"+
+    "</ol>"
+  )
+</script>
+
+
+<div id="list"></div>
+<script>
+  document.getElementById('list').innerHTML = "<h1>SHOPPING LIST v.2</h1>" +
     "<table>" +
-    "<thead>" +
-    "<tr>" +
-    "<th>List Item(s)</th>" +
-    "</tr>" +
-    "</thead>" +
-    "<tbody>" +
-    "<tr><td>Pay Bills</td></tr>" +
-    "<tr><td>Budget Account</td></tr>" +
-    "<tr><td>Mow Lawn</td></tr>" +
-    "</tbody>" +
+
+      "<thead>" +
+        "<tr>" +
+          "<th>Id</th>" + "<th>Item</th>" +
+          "</tr>" +
+        "</thead>" +
+
+        "<tbody>" +
+            "<tr>" +
+            "<td>1</td>"+
+            "<td>Oranges</td>"+
+            "</tr>" +
+            "<tr>" +
+            "<td>2</td>"+
+            "<td>Apples</td>"+
+            "</tr>" +
+            "<tr>" +
+            "<td>3</td>"+
+            "<td>Pears</td>"+
+            "</tr>" +
+            "<tr>" +
+            "<td>4</td>"+
+            "<td>Limes</td>"+
+            "</tr>" +
+            "<tr>" +
+            "<td>5</td>"+
+            "<td>Lemons</td>"+
+            "</tr>" +
+
+        "</tbody>" +
     "</table>"
 </script>
