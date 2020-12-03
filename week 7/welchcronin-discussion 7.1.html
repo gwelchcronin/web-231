@@ -1,12 +1,66 @@
+<!-- /*
+============================================
+; Title:  WelchCronin-assignment 7.3.html
+; Author: Professor Krasso
+; Date:   03 December 2020
+; Modified By: Georgia Welch Cronin
+; Code Attribution: code ideas were taken from
+    :https://www.washington.edu/accesscomputing/webd2/student/unit5/module2/lesson1.html
+; Description: Creating an HTML page that uses inline javascript functions.
+;===========================================
+*/ -->
+<!-- //Expected output - The large text should ask Where have you been? Below that the button should  say "Answer Button"
+When clicked  it should have a pop up alert that says "This page says 'Hey, nice to see you here!'" with an OK button to close the dialog box -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+    <script> //adding a bit of inline javascript to create a function called showAlert
+    //then giving the alert some text to show as a
+        function ShowAlert() {
+          let myText = "Hey, it is nice to see you here!";
+          alert (myText)
+        }
+    </script>
+
+</head>
+
+<!-- creating a simple statement at the h2 level to be manipulated in javascript -->
+<!-- creating a simple button and adding in a javascript event to handle the manipulation of the button -->
 <body>
 
-<h2>What Can JavaScript Do?</h2>
+    <h1 >Where have you been?</h1>
 
-<p id="demo">JavaScript can change HTML content.</p>
+    <button onclick="showAlert()">Answer Button</button>
 
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+
+<!-- added some simple css styling inline, borrowed from my Biosite project for the h1 and button -->
+<style>
+    h1 {
+        font-size: 3em;
+        color: black;
+        font-family: 'Alice', serif;
+    }
+    button {
+        width: 140px;
+        height: 50px;
+        margin-top: 1em;
+        background-color: #EAE6DA;
+        font-size: 1em;
+        font-family: 'Alice', serif;
+        border: none;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        float: left;
+      }
+</style>
 
 </body>
 </html>
+
