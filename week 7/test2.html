@@ -1,0 +1,50 @@
+<!--
+============================================
+; Title:  heredia-discussion-7.1.html
+; Author: Professor Krasso
+; Date:   02 December 2020
+; Modified By: Daniel Heredia
+; Description: Create simple a simple HTML
+;page with embedded JavaScript and at least
+;(2) JavaScript selector errors.
+============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discussion 7.1">
+  <meta name="author" content="Daniel Heredia">
+  <title>HTML with Javascript</title>
+  <style>
+    h1{
+      background-color: grey;
+      text-align: center;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div id="update">
+  <h1>Welcome to Week 7!</h1>
+  </div>
+
+<button onclick="myFunction('2','weeks')">Click to see text</button>
+
+<p id="text"></p>
+
+<script>
+function myFunction(number,time) {
+  document.getElementById('text').innerHTML = "Only " + number + " " + time + " left ";
+}
+</script>
+
+<script>
+    document.getElementById('update').style.color = "orange";
+</script>
+
+</body>
+</html>
