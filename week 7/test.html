@@ -1,23 +1,68 @@
+<!-- /*
+============================================
+; Title:  WelchCronin-assignment 7.3.html
+; Author: Professor Krasso
+; Date:   02 December 2020
+; Modified By: Georgia Welch Cronin
+; Description: Creating an HTML page that uses inline javascript functions.
+;===========================================
+*/ -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 7.4</title>
+
+  <link rel="stylesheet" href="../site.css">
+</head>
+
 <body>
 
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+  <table>
+    <thead>
+      <tr>
+      <th>Id</th> 
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Functions</th>
+      </tr>
+    </thead>
 
-<p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
-<p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+    <tbody>
+      <tr>
+      <td>1</td>
+      <td>Laptop</td>
+      <td>1,500.99</td>
+      <td>
+          <a href="javascript:alert('1')">EDIT</a> |
+          <a href="javascript:confirm('Are you sure?'')">DELETE</a>
+      </td>
+      </tr>
+      <tr>
+      <td>2</td>
+      <td>Motherboard</td>
+      <td>35.70</td>
+      <td>EDIT | DELETE</td>
+      </tr>
+      <tr>
+      <td>3</td>
+      <td>Monitor</td>
+      <td>174.99</td>
+      <td>EDIT | DELETE</td>
+      </tr>
+      <tr>
+      <td>4</td>
+      <td>Mouse</td>
+      <td>13.99</td>
+      <td>EDIT | DELETE</td>
+      </tr>
+      <tr>
+      <td>5</td>
+      <td>Keyboard</td>
+      <td>14.50</td>
+      <td>EDIT | DELETE</td>
+      </tr>
 
-<script>
-function bigImg(x) {
-  x.style.height = "64px";
-  x.style.width = "64px";
-}
-
-function normalImg(x) {
-  x.style.height = "32px";
-  x.style.width = "32px";
-}
-</script>
-
-</body>
-</html>
+  </tbody>
+  </table>
