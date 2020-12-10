@@ -1,0 +1,102 @@
+<!-- /*
+============================================
+; Title:  WelchCronin-assignment 8.3.html
+; Author: Professor Krasso
+; Date:   10 December 2020
+; Modified By: Georgia Welch Cronin
+; Code attribution, simple html ideas from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_toggleclass
+
+; Description: Creating a dynamic HTML page
+;===========================================
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+   <meta charset="UTF-8">
+   <title>Exercise 8.3</title>
+   <link rel="stylesheet" href="8.3 styles.css">
+ <!-- get the required font files from 3rd party sources -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+ 
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script>
+ $(document).ready(function(){
+   $("button").click(function(){
+     $("p").toggle();
+   });
+ });
+ </script>
+
+ <script>
+     $(function() {
+
+$(".fruitId").click(function(event) {
+
+    event.preventDefault();
+
+    var fruitId = $(this).text();
+
+    var fruitType = $(this).closest("td").next().text();
+
+    alert("{fruit_id: " + fruitId + ", fruit_type: " + fruitType + "}");
+
+ });
+
+});
+ </script>
+
+ </head>
+ <body>
+
+<!-- creating the top bar  -->
+<div class="navbar"></div> 
+<div class="content">
+
+ <h1>Part A</h1>
+ <p>Integer sollicitudin nulla est, id tempus leo efficitur non. Sed malesuada sollicitudin mauris. Sed efficitur urna id nibh tempus, nec convallis leo facilisis. Quisque sem libero, condimentum a cursus eget, porta non odio. Mauris non gravida sapien, sed bibendum eros. Suspendisse ullamcorper, sapien vel mattis vehicula, justo lectus sollicitudin neque, a blandit mi ipsum vitae ligula. Donec felis metus, imperdiet vel ultrices vehicula, dignissim a enim. Pellentesque aliquam tincidunt lectus sit amet sollicitudin. Nunc at nulla risus. Vestibulum et nunc finibus, gravida elit eget, accumsan mauris. Suspendisse lobortis risus sed risus consequat, id condimentum erat convallis. Aliquam dui massa, tempus vel imperdiet sit amet, tincidunt sed nunc. Aliquam venenatis purus id placerat consectetur. Aliquam bibendum lorem at fermentum rutrum.</p>
+  
+ <button>Toggle</button>
+
+
+ <h1>Part B</h1>
+ <h2>Fruits</h2>
+ <table>
+     <thead>
+       <tr>
+       <th>Id</th> 
+       <th>Type</th>
+       </tr>
+     </thead>
+ 
+     <tbody>
+       <tr>
+         <td><a href="#" class="fruitId">1</a></td>
+         <td>Apple</td>
+       </tr>
+       <tr>
+        <td><a href="#" class="fruitId">2</a></td>
+         <td>Orange</td>
+       </tr>
+       <tr>
+        <td><a href="#" class="fruitId">3</a></td>
+         <td>Banana</td>
+       </tr>
+       <tr>
+        <td><a href="#" class="fruitId">4</a></td>
+         <td>Kiwi</td>
+       </tr>
+       <tr>
+        <td><a href="#" class="fruitId">5</a></td>
+         <td>Mango</td>
+       </tr>
+ 
+   </tbody>
+   </table>
+</div>
+</body>
+ </html>

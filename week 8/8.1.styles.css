@@ -1,0 +1,23 @@
+h1 {
+    color: rgb(97, 170, 192);
+    text-align: center;
+    font-family: 'Alice', serif;
+    font-weight: 400;
+}
+
+p {
+    color: rgb(47, 89, 102);
+    text-align: center;
+    font-family: "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-weight: 100;
+}
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #cceaee;
+    border: solid 1px #070707;
+  }
+  
+  #panel {
+    padding: 30px;
+    display: none;

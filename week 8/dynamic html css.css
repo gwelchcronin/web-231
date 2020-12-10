@@ -1,0 +1,47 @@
+/*
+============================================
+; Title:  dynamic html css.css
+; Author: Georgia Welch Cronin
+; Date:   07 december 2020
+; Description: Styling for 8.2
+;===========================================
+*/
+
+/* The navigation bar or navbar */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(135, 206, 188);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 50px;
+  }
+
+
+/* The styling for the unordered list */
+ul {
+    margin: auto;
+    display: inline-block; /* display: inline-block; This centers the ul or the bullets*/
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight:  300, 400, 500;
+    line-height: 1.3em;
+    list-style-type: square;
+    text-align: left; /* this centers the text next to the centered bullet */
+
+}
+
+
+#fruits {
+    text-align: center; /* this centers the text */
+}
+
+  /* The styling for the title */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight:  300, 400, 500;
+    text-align: center;
+    padding: 20px; /* padding: 20px; this pushes the content below it down by 20 px */ 
+}
+  

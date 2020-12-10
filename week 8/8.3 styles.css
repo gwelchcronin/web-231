@@ -1,0 +1,56 @@
+/*
+============================================
+; Title:  dynamic html css.css
+; Author: Georgia Welch Cronin
+; Date:   07 december 2020
+; Description: Styling for 8.2
+;===========================================
+*/
+
+/* The navigation bar or navbar */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(135, 206, 188);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 50px;
+  }
+
+.content {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:  300, 400, 500;
+}
+
+
+
+  /* The styling for the title */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight:  300, 400, 500;
+    padding-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+  }
+  
+  th {
+    background-color: rgb(135, 206, 188);
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color:  rgb(206, 236, 229);
+  }
+  

@@ -1,0 +1,67 @@
+<!-- /*
+============================================
+; Title:  WelchCronin-assignment 8.2.html
+; Author: Professor Krasso
+; Date:   09 December 2020
+; Modified By: Georgia Welch Cronin
+; Description: Creating a dynamic HTML page
+;===========================================
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+  <link rel="stylesheet" href="dynamic html css.css">
+<!-- get the required font files from 3rd party sources -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+<!-- creating the top bar  -->
+<div class="navbar"></div> 
+
+
+<!-- adding a title to the page that serves as a title to the unordered list -->
+<div class="title">---FRUIT LIST---</div>
+
+<!-- creating the div to contain the rest of the information  -->
+<div id="fruits"></div>
+
+
+<script>
+// Create an array of fruits with two fields (id and type)
+function Fruit(id,type) {
+    this.id = id;
+    this.type = type;
+}
+
+    const fruits= [
+        new Fruit("1", "Apple"),
+        new Fruit("2", "Orange"),
+        new Fruit("3", "Banana"),
+        new Fruit("4", "Kiwi"),
+        new Fruit("5", "Mango")
+    ];
+
+// a title of FRUIT LIST has been added in front of the unordered list
+    let output = `<h1> FRUIT LIST </h1><ul>`
+        for (const Fruit of fruits)
+        {
+            output += `<li>ID: ${Fruit.id} + TYPE: ${Fruit.type}</li>`
+        }
+    output += `</ul>`;
+
+    console.log(output);
+
+    document.getElementById("fruits").innerHTML=output;
+
+</script>
+
+</body>
+</html>

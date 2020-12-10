@@ -1,0 +1,47 @@
+<!-- /*
+============================================
+; Title:  WelchCronin-assignment 8.2.html
+; Author: Professor Krasso
+; Date:   08 December 2020
+; Modified By: Georgia Welch Cronin
+; Code attribution, simple html ideas from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document
+; and from https://www.w3schools.com/jquery/jquery_slide.asp
+; Description: Creating a dynamic HTML page
+;===========================================
+
+Expected output, when you click on the It's cool line of text another box slides down with an additional line of text
+that says "Like making text appear and disappear." Clicking on the top line again should make the box slide back up.
+
+*/ -->
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="8.1.styles.css">
+    <title>Exercise 8.1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("flip").click(function(){
+        $("panel").slidetoggle("slow");
+  });
+});
+    </script>
+</head>
+
+<html>
+<body>
+
+<h1>Dynamic HTML - Click below to see what happens.</h1>
+
+<div id="flip">
+    <p>It is cool what we can do to affect how pages work.</p>
+</div>
+
+<div id="panel">
+    <p>Like making text appear and disappear.</p>
+</div>
+
+
+</body>
+</html>
